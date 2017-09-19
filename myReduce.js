@@ -2,10 +2,12 @@
 // Don't worry about initialValue at first. You can always add it in later.
 
 function myReduce(arr, callback) {
-
-//  CODE INSIDE HERE   //
-
-}
+	var reduceArray = [];
+	for (let i = 0; i < arr.length; i++) {
+		reduceArray = callback(arr[i], i, arr);
+	}
+	return reduceArray;
+} /*not working, couldn't figure this one out*/
 
 /*
  Best if you don't code out here.
